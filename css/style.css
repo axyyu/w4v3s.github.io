@@ -20,6 +20,10 @@ h1, h2, h3, h4, h5 {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media only screen and (max-width: 850px) {
+    .view {
+      min-height: none;
+      margin-bottom: 5vh; } }
 
 .content {
   text-align: center;
@@ -34,6 +38,11 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 3.0em;
   padding-bottom: 3vh; }
+  @media only screen and (max-width: 850px) {
+    h1 {
+      margin: 0 20px;
+      font-size: 2.5em;
+      padding-bottom: 5vh; } }
 
 a {
   color: inherit;
@@ -85,12 +94,20 @@ a {
     .header {
       display: none; } }
 
-.social-icons span {
-  font-size: 2.0em;
-  margin: 0 2vw; }
-  .social-icons span:hover {
-    cursor: pointer;
-    opacity: .3; }
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .social-icons span {
+    font-size: 2.0em;
+    margin: 0 2vw; }
+    .social-icons span:hover {
+      cursor: pointer;
+      opacity: .3; }
+  @media only screen and (max-width: 850px) {
+    .social-icons {
+      margin: 0 20px;
+      justify-content: space-around; } }
 
 .arrow-down {
   text-align: center;
@@ -130,6 +147,10 @@ a {
     #intro .introduction h3 {
       font-size: 1.2em;
       line-height: 1.3em; }
+  @media only screen and (max-width: 850px) {
+    #intro {
+      background: none;
+      margin: 0 20px; } }
 
 #music .allden-tracks {
   margin: 0 5vw;
@@ -146,6 +167,9 @@ a {
     min-height: 100px;
     min-width: 30vw;
     border-radius: 15vh; }
+    @media only screen and (max-width: 850px) {
+      #music .allden-tracks .track {
+        min-width: 0; } }
     #music .allden-tracks .track img {
       min-height: 100px;
       min-width: 100px;
@@ -161,6 +185,9 @@ a {
       text-align: left;
       font-weight: 300;
       border-radius: 15vh; }
+      @media only screen and (max-width: 850px) {
+        #music .allden-tracks .track .info {
+          display: none; } }
       #music .allden-tracks .track .info h4 {
         font-size: 1.5em; }
       #music .allden-tracks .track .info p {
@@ -199,6 +226,9 @@ a {
     margin: 10px;
     min-height: 100px;
     min-width: 30vw; }
+    @media only screen and (max-width: 850px) {
+      #projects .projects-list .project {
+        min-width: 0; } }
     #projects .projects-list .project img {
       min-height: 100px;
       min-width: 100px;
@@ -224,6 +254,9 @@ a {
         font-size: 1.2em; }
         #projects .projects-list .project .info .buttons a {
           margin: 0; }
+      @media only screen and (max-width: 850px) {
+        #projects .projects-list .project .info {
+          display: none; } }
 
 #design .designs {
   margin: 0 5vw;
@@ -239,11 +272,21 @@ a {
     margin: 10px;
     min-height: 150px;
     min-width: 150px; }
+    @media only screen and (max-width: 850px) {
+      #design .designs .des {
+        min-width: 0;
+        min-height: 100px; } }
     #design .designs .des img {
       min-height: 150px;
       min-width: 150px;
       height: 15vh;
       width: 15vh; }
+      @media only screen and (max-width: 850px) {
+        #design .designs .des img {
+          min-height: 100px;
+          min-width: 100px;
+          height: 15vh;
+          width: 15vh; } }
     #design .designs .des .info {
       padding: 10px;
       margin: 1vw 0;
@@ -260,3 +303,6 @@ a {
       #design .designs .des .info p {
         font-size: 1.2em;
         word-wrap: break-word; }
+      @media only screen and (max-width: 850px) {
+        #design .designs .des .info {
+          display: none; } }
