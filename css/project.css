@@ -49,26 +49,6 @@ a {
   text-decoration: none;
   margin: 0; }
 
-.intro:hover {
-  cursor: pointer;
-  color: #00b371;
-  opacity: 1 !important; }
-
-.projects:hover {
-  cursor: pointer;
-  color: #35c3c0;
-  opacity: 1 !important; }
-
-.music:hover {
-  cursor: pointer;
-  color: #3cacd7;
-  opacity: 1 !important; }
-
-.design:hover {
-  cursor: pointer;
-  color: #488398;
-  opacity: 1 !important; }
-
 .header {
   position: fixed;
   background: #f4f4f4;
@@ -97,7 +77,8 @@ a {
 .social-icons {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
+  justify-content: center;
+  margin: 20px 0; }
   .social-icons a {
     margin: 0 2vw; }
   .social-icons span {
@@ -111,204 +92,34 @@ a {
       margin: 0 20px;
       justify-content: space-around; } }
 
-.arrow-down {
-  text-align: center;
-  margin: 0 auto;
-  font-size: 3.0em;
-  position: relative;
-  margin-top: -70px;
-  transition: margin 0.3s ease; }
-  .arrow-down .fa-angle-double-down:hover {
-    cursor: pointer;
-    margin-top: -10px;
-    opacity: .5; }
+#intro {
+  margin: 0;
+  text-align: center; }
+  #intro img {
+    margin: 20px auto;
+    height: 30vh;
+    width: 30vh; }
+  #intro h2 {
+    font-size: 3em;
+    margin: 10px 0px; }
+  #intro h3 {
+    display: inline-block;
+    margin: 10px auto;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    max-width: 500px; }
+
+#overview {
+  display: grid;
+  grid-template-columns: 30vw 30vw;
+  grid-column-gap: 20px; }
+  #overview .column {
+    background-color: blue; }
 
 .footer {
   text-align: center;
   padding: 20px 0;
   margin: 0 auto; }
-
-#intro {
-  background: url("../img/sunrise.png");
-  background-repeat: no-repeat;
-  background-size: cover; }
-  #intro .introduction {
-    margin: 5vh 30vw;
-    text-align: center; }
-    #intro .introduction img {
-      height: 30vh;
-      width: 30vh;
-      border-radius: 100vw; }
-    #intro .introduction h2 {
-      font-family: 'Shadows Into Light';
-      font-size: 3em;
-      margin: 10px 0px; }
-    #intro .introduction h3 {
-      display: inline-block;
-      font-size: 1.2em;
-      line-height: 1.3em;
-      max-width: 500px; }
-    @media only screen and (max-width: 850px) {
-      #intro .introduction {
-        margin: 5vh 20px; } }
-  @media only screen and (max-width: 850px) {
-    #intro {
-      background: none; } }
-
-#music .allden-tracks {
-  margin: 0 5vw;
-  margin-top: 2vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; }
-  #music .allden-tracks .track {
-    display: flex;
-    flex-direction: row;
-    background: rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    height: 100px;
-    min-width: 30vw;
-    border-radius: 15vh; }
-    @media only screen and (max-width: 850px) {
-      #music .allden-tracks .track {
-        min-width: 0; } }
-    #music .allden-tracks .track img {
-      min-height: 100px;
-      min-width: 100px;
-      max-height: 100%;
-      max-width: inherit;
-      border-radius: 15vh; }
-    #music .allden-tracks .track .info {
-      margin: 5px 1vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      text-align: left;
-      font-weight: 300;
-      border-radius: 15vh;
-      padding: 0 10px; }
-      @media only screen and (max-width: 850px) {
-        #music .allden-tracks .track .info {
-          display: none; } }
-      #music .allden-tracks .track .info h4 {
-        font-size: 1.5em; }
-      #music .allden-tracks .track .info p {
-        font-size: 1.2em;
-        font-style: italic;
-        word-wrap: break-word; }
-      #music .allden-tracks .track .info .buttons {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        font-size: 1.2em; }
-        #music .allden-tracks .track .info .buttons span {
-          margin: 0; }
-        #music .allden-tracks .track .info .buttons .music {
-          width: 1.2em; }
-        #music .allden-tracks .track .info .buttons .music-bar {
-          margin: auto 10px;
-          max-width: calc(calc(100% - 1.2em) - 30px);
-          height: 10px;
-          border-radius: 10px;
-          background: #3cacd7;
-          border-right: 2px solid black; }
-
-#projects .projects-list {
-  margin: 0 5vw;
-  margin-top: 2vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; }
-  #projects .projects-list .project {
-    display: flex;
-    flex-direction: row;
-    background: rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    height: 100px;
-    min-width: 30vw; }
-    @media only screen and (max-width: 850px) {
-      #projects .projects-list .project {
-        min-width: 0; } }
-    #projects .projects-list .project img {
-      min-height: 100px;
-      min-width: 100px;
-      max-height: 100%;
-      max-width: inherit; }
-    #projects .projects-list .project .info {
-      margin: 5px 1vw;
-      padding: 0 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      text-align: left;
-      font-weight: 300; }
-      #projects .projects-list .project .info * {
-        margin: 2px 0; }
-      #projects .projects-list .project .info h4 {
-        font-size: 1.5em; }
-      #projects .projects-list .project .info p {
-        font-size: 1.2em;
-        word-wrap: break-word; }
-      #projects .projects-list .project .info .buttons {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        font-size: 1em; }
-        #projects .projects-list .project .info .buttons a {
-          margin: 0; }
-      @media only screen and (max-width: 850px) {
-        #projects .projects-list .project .info {
-          display: none; } }
-
-#design .designs {
-  margin: 0 5vw;
-  margin-top: 2vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; }
-  #design .designs .des {
-    display: flex;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    min-height: 150px;
-    width: 150px; }
-    @media only screen and (max-width: 850px) {
-      #design .designs .des {
-        min-width: 0;
-        min-height: 100px;
-        width: 100px; } }
-    #design .designs .des img {
-      min-height: 100px;
-      min-width: 100px;
-      width: 100%;
-      max-height: 100%; }
-      @media only screen and (max-width: 850px) {
-        #design .designs .des img {
-          min-height: 100px;
-          min-width: 100px;
-          height: 15vh;
-          width: 15vh; } }
-    #design .designs .des .info {
-      padding: 10px;
-      margin: 1vw 0;
-      text-align: left;
-      font-weight: 300; }
-      #design .designs .des .info * {
-        margin: 5px 0; }
-      #design .designs .des .info h4 {
-        font-size: 1.5em; }
-      #design .designs .des .info p {
-        font-size: 1.2em;
-        word-wrap: break-word; }
-      @media only screen and (max-width: 850px) {
-        #design .designs .des .info {
-          display: none; } }
 
 /*!
  * Font Awesome Free 5.0.11 by @fontawesome - https://fontawesome.com
